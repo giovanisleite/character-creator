@@ -24,3 +24,10 @@
   font-weight: 400;
   color: hsl(0deg, 0%, 30%);
 }
+
+@media only screen and (max-width: 600px) {
+  .controlPane {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}

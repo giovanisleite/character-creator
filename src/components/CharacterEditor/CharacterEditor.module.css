@@ -3,9 +3,6 @@
   padding-bottom: 64px;
 }
 
-.maxWidthWrapper {
-}
-
 .header {
   padding-bottom: 64px;
   width: 65%;
@@ -34,4 +31,36 @@
 
 .controlColumn {
   width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .maxWidthWrapper {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .characterWrapper {
+    position: static;
+    min-height: 80vh;
+    min-width: 100%;
+  }
+
+  .controlColumn {
+    width: 150%;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
 }
